@@ -5,11 +5,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d3b4a03-622a-4a73-8949-72a532083ead" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/back-end/src/main/resources/static/nav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back-end/src/main/resources/templates/fragments/shared.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/services/BetServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/services/BetServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/betfree/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/betfree/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/betfree/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/betfree/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/betfree/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/betfree/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/betfree/src/main/java/com/example/betfree/BetFree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/betfree/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/betfree/src/test/java/com/example/betfree/BetfreeApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/.idea/back-end.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/java/com/example/randomproject/BetFree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/java/com/example/randomproject/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/java/com/example/randomproject/entities/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/java/com/example/randomproject/entities/Bet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/java/com/example/randomproject/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/java/com/example/randomproject/enums/RoleEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/java/com/example/randomproject/repository/BetRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/java/com/example/randomproject/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/java/com/example/randomproject/services/BetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/java/com/example/randomproject/services/BetServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/java/com/example/randomproject/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/java/com/example/randomproject/services/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/resources/static/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/resources/templates/fragments/shared.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/randomproject/back-end/src/test/java/com/example/randomproject/RandomProjectApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/BetFree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/controllers/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/entities/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/entities/Bet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/entities/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/enums/RoleEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/repository/BetRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/services/BetService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/services/BetServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/services/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/example/randomproject/services/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/resources/static/nav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/resources/templates/fragments/shared.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/test/java/com/example/randomproject/RandomProjectApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +88,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/back-end" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -64,16 +125,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Avada Kedavra/Coding/GAMBO/random-project/src/main/resources&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Avada Kedavra/Coding/FreeBet/free-bet/back-end/randomproject",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.randomproject.services" />
@@ -84,8 +146,10 @@
   </component>
   <component name="RunManager" selected="Application.BetFree">
     <configuration name="BetFree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.example.randomproject.BetFree" />
-      <module name="random-project" />
+      <module name="back-end" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.randomproject.*" />
@@ -165,6 +229,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/back-end" />
+    </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

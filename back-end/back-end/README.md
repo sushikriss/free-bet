@@ -1,2 +1,0 @@
-# federation-project
-Federation repository
