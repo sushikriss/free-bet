@@ -1,8 +1,8 @@
 package com.example.betfree.entities;
 
 import jakarta.persistence.*;
+import jakarta.transaction.Transactional;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -23,7 +23,7 @@ public class User extends BaseEntity {
     private double userTotalBetAmount;
 
     @OneToMany
-    private ArrayList<Bet> userBets;
+    private List<Bet> userBets;
 
     public User() {
     }
@@ -35,6 +35,14 @@ public class User extends BaseEntity {
         this.password = password;
         this.userLevel = userLevel;
         this.userTotalBetAmount = userTotalBetAmount;
+    }
+
+    public List<Bet> getUserBets() {
+        return userBets;
+    }
+
+    public void setUserBets(List<Bet> userBets) {
+        this.userBets = userBets;
     }
 
     public String getFullName() {
