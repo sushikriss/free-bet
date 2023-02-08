@@ -2,11 +2,13 @@ package com.example.betfree.services;
 
 import com.example.betfree.entities.User;
 import com.example.betfree.repository.UserRepository;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements  UserService {
@@ -14,19 +16,24 @@ public class UserServiceImpl implements  UserService {
     @Autowired
     private final UserRepository userRepository;
 
+    @Autowired
+    private SessionFactory sessionFactory;
+
     public UserServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
     @Override
-    public Optional<User> getUserById(Long id) {
-        Optional<User> returnedUser = this.userRepository.findById(id);
-        if (returnedUser.isPresent()) {
-            System.out.println("User is returned");
-        } else {
-            System.out.println("No user found");
-        }
-        return returnedUser;
+    public User getUserById(Long id) {
+//        Session session = sessionFactory.openSession();
+//        try {
+//            Transaction transaction = session.beginTransaction();
+//            return session.get(User.class, id);
+//        }
+//        finally {
+//            session.close();
+//        }
+        return null;
     }
 
     @Override

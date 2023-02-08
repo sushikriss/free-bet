@@ -1,5 +1,6 @@
 package com.example.betfree.entities;
 
+import com.example.betfree.enums.RoleEnum;
 import jakarta.persistence.*;
 import jakarta.transaction.Transactional;
 
@@ -21,6 +22,8 @@ public class User extends BaseEntity {
     private int userLevel;
     @Column(name = "total_bet_amount")
     private double userTotalBetAmount;
+    @Enumerated(EnumType.STRING)
+    private RoleEnum role;
 
     @OneToMany
     private List<Bet> userBets;

@@ -1,0 +1,68 @@
+.chat {
+  position: fixed;
+  left: 0;
+  width: 10rem;
+  margin-top: 4rem;
+  background-color: #222222;
+  width: 20%;
+  font-family: Nunito, sans-serif;
+  color: white;
+  z-index: 1;
+}
+
+.fa-earth-europe {
+  margin-top: 7%;
+  padding-right: 3%;
+  color: #3ecc85;
+}
+
+.users {
+  color: rgb(146, 147, 166);
+}
+
+.messages {
+  padding: 20px;
+  height: 31rem;
+  padding-bottom: 3.5rem;
+}
+
+.upper-field {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 86%;
+  margin-left: 3%;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(41, 41, 41);
+}
+
+.input-field {
+  margin-left: 20%;
+  margin-top: -16%;
+  position: absolute;
+}
+
+.input-field > input {
+  height: 2rem;
+  background-color: rgb(41, 41, 41);
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  border-radius: 2px;
+  width: 13.5rem;
+  margin-left: -2rem;
+  transition: all 0.3s;
+}
+
+.input-field > input:focus {
+  outline: none;
+  border-color: #3ecc85;
+}
+
+.fa-hands-holding-circle {
+  cursor: pointer;
+  margin-left: 1rem;
+  color: rgb(146, 147, 166);
+}

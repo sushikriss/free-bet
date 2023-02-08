@@ -1,0 +1,73 @@
+<div class="main-div">
+  <img src="../../../assets/img/logo.png" alt="logo" routerLink="/home" />
+  <div class="menu">
+    <ul class="upper-menu">
+      <li>
+        <a routerLinkActive="active" routerLink="/about" class="about">ABOUT</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" routerLink="/referral" class="ref"
+          >REFFERALS</a
+        >
+      </li>
+      <li>
+        <i class="fa-brands fa-ethereum"></i>
+        <a routerLinkActive="active" routerLink="/tokens">TOKENS</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-coins"></i>
+        <a routerLinkActive="active" routerLink="/daily">DAILY SPIN</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-shop"></i>
+        <a routerLinkActive="active" routerLink="/shop">SHOP</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-medal"></i>
+        <a routerLinkActive="active" routerLink="/achievements">ACHIEVEMENTS</a>
+      </li>
+      <div class="login">
+        <button
+          class="login-button"
+          type="button"
+          (click)="showLogin = !showLogin"
+        >
+          LOG IN
+        </button>
+        <form action="POST" *ngIf="showLogin" class="form form-login">
+          <p>
+            No account?
+            <a class="register" routerLink="/register">Register</a>
+          </p>
+          <div class="form-field">
+            <label class="user" for="login-username"
+              ><span class="hidden">Username</span></label
+            >
+            <input
+              id="login-username"
+              type="text"
+              class="form-input"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label class="lock" for="login-password"
+              ><span class="hidden">Password</span></label
+            >
+            <input
+              id="login-password"
+              type="password"
+              class="form-input"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <input type="submit" value="Log in" />
+          </div>
+        </form>
+      </div>
+    </ul>
+  </div>
+</div>
