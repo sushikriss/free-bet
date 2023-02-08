@@ -27,17 +27,15 @@
         <a routerLinkActive="active" routerLink="/achievements">ACHIEVEMENTS</a>
       </li>
       <div class="login">
-        <button
-          class="login-button"
-          type="button"
-          (click)="showLogin = !showLogin"
-        >
+        <button class="login-button" type="button" (click)="toggleStyles()">
           LOG IN
         </button>
-        <form action="POST" *ngIf="showLogin" class="form form-login">
+        <form action="POST" [ngStyle]="boxStyles" class="form form-login">
           <p>
             No account?
-            <a class="register" routerLink="/register">Register</a>
+            <a class="register" routerLink="/register" (click)="toggleStyles()"
+              >Register</a
+            >
           </p>
           <div class="form-field">
             <label class="user" for="login-username"

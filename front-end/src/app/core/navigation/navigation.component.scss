@@ -119,6 +119,7 @@ i {
   font-size: 14px;
   background-color: rgb(41, 41, 41);
   animation: translateLogin 0.8s;
+  transition: all 0.3s;
 }
 
 .register {
@@ -223,17 +224,6 @@ input {
 
 .text--center {
   text-align: center;
-}
-
-@keyframes translateLogin {
-  from {
-    transform: translate(0px, 150px);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    transform: translate(0px, 0px);
-  }
 }
 
 .active {

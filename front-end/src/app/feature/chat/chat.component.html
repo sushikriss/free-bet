@@ -1,6 +1,6 @@
-<div class="chat">
+<div class="chat" [ngStyle]="chatCloseParams">
   <div class="upper-field">
-    <i class="fa-solid fa-earth-europe"></i>
+    <i class="fa-solid fa-globe"></i>
     <p>Users online: <span class="users">414</span></p>
   </div>
   <div class="messages">
@@ -14,6 +14,11 @@
   </div>
   <div class="input-field">
     <input type="text" placeholder="Send message..." />
-    <i class="fa-solid fa-hands-holding-circle"></i>
+    <div [ngStyle]="messagesOptions" class="messages-options">
+      <p>Gift coins</p>
+      <p>Chat rules</p>
+      <p (click)="closeChat()">Close chat</p>
+    </div>
+    <i class="fa-solid fa-bars" (click)="toggleAnimation()"></i>
   </div>
 </div>
