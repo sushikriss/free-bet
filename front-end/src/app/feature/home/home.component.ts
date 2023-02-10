@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { TokenApiService } from 'src/app/shared/services/token-api.service';
+import { WidthChangeService } from 'src/app/shared/services/width-change.service';
 import { User } from '../../shared/fragments/user-interface';
 
 @Component({
@@ -7,14 +9,32 @@ import { User } from '../../shared/fragments/user-interface';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
   user: User | undefined;
+  toChangeWidth: boolean = false;
+  widthSubscription: any;
+  cryptoData: any;
+  loading: boolean = true;
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private widthService: WidthChangeService,
+    private cryptoService: TokenApiService
+  ) {}
 
-  ngOnInit(): void {
-    this.http.get<User>('http://localhost:8080/api/users').subscribe((data) => {
-      this.user = data;
-    });
+  async ngOnInit() {
+    this.widthSubscription = this.widthService.currentToggle.subscribe(
+      (value) => {
+        this.toChangeWidth = value;
+      }
+    );
+    
+    const cryptoData = await this.cryptoService.getCryptoData();
+    this.loading = false;
+    console.log(cryptoData);
+    
+  }
+
+  ngOnDestroy(): void {
+    this.widthSubscription?.unsubscribe();
   }
 }

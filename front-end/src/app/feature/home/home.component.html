@@ -1,4 +1,10 @@
-<div class="main-div">
+<div class="main-div" [ngStyle]="{'width': toChangeWidth ? '85%' : '70%', 'margin-left': toChangeWidth ? '7rem' : '22rem'}">
+  <div class="dot-wave" *ngIf="loading" [ngStyle]="{'margin-left': toChangeWidth ? '39rem' : '31rem'}">
+    <div class="dot-wave__dot"></div>
+    <div class="dot-wave__dot"></div>
+    <div class="dot-wave__dot"></div>
+    <div class="dot-wave__dot"></div>
+  </div>
   <div class="token-tab">
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit commodi
@@ -6,8 +12,5 @@
       similique, nisi quas enim doloribus cum perferendis molestiae repudiandae,
       necessitatibus repellendus corporis!
     </p>
-
-    <p>{{ user?.fullName }}</p>
-    <p>{{ user?.email }}</p>
   </div>
 </div>

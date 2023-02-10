@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
   showLogin: boolean = false;
-  boxStyles = {
+  boxStyles: any = {
     transform: 'translate(0px, 150px)',
     opacity: 0,
   };
@@ -23,6 +23,7 @@ export class NavigationComponent implements OnInit {
       : {
           transform: 'translate(0px, 150px)',
           opacity: 0,
+          visibility: 'hidden',
         };
   }
 

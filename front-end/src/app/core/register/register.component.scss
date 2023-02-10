@@ -1,0 +1,134 @@
+.register {
+  margin-left: 2rem;
+}
+
+label {
+  width: 14rem;
+}
+
+.register > .register-button {
+  margin-top: -5%;
+  width: 200px;
+  height: 2.5rem;
+  font-family: Russo One, sans-serif;
+  cursor: pointer;
+  background-color: rgb(41, 41, 41);
+  border: 1px solid #fdd776;
+  color: #fdd776;
+  letter-spacing: 1px;
+  transition: all 0.1s;
+}
+
+.register > .register-button:active {
+  background-color: rgb(59, 58, 39);
+}
+
+.form {
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 7.9%;
+  height: 65%;
+  padding: 27px;
+  text-align: left;
+  color: white;
+  width: 36%;
+  font-size: 14px;
+  background-color: rgb(41, 41, 41);
+  animation: translateLogin 0.8s;
+  font-family: Poppins, sans-serif;
+  transition: all 0.3s;
+}
+
+.register {
+  color: #c49a30;
+  cursor: pointer;
+}
+
+.register-item {
+  color: #ffff;
+  padding: 25px 25px 0;
+  margin: 20px 20px 0;
+  border-radius: 3px;
+}
+
+input {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.form input[type="password"],
+.form input[type="text"],
+.form input[type="submit"] {
+  width: 100%;
+}
+
+.form-register label,
+.form-register input[type="text"],
+.form-register input[type="password"],
+.form-register input[type="submit"] {
+  border-radius: 0.25rem;
+  padding: 1rem;
+  color: rgb(146, 147, 166);
+}
+
+.form-register label {
+  background-color: #222222;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.form-register input {
+  background-color: transparent;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+  background-color: #eeeeee23;
+}
+.form-register input[type="submit"] {
+  background-color: rgb(41, 41, 41);
+  border: 1px solid #fdd776;
+  color: #fdd776;
+  letter-spacing: 0.5px;
+  border-radius: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form-field {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+  box-shadow: -1px -1px 6px 3px rgb(0 0 0 / 26%);
+}
+
+.form-field > input[type="submit"]:focus {
+  background-color: rgb(59, 58, 39);
+}
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.text--center {
+  text-align: center;
+}

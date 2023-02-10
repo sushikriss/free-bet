@@ -14,11 +14,14 @@
   </div>
   <div class="input-field">
     <input type="text" placeholder="Send message..." />
-    <div [ngStyle]="messagesOptions" class="messages-options">
+    <div [ngClass]="{'show': toggle}" class="messages-options">
       <p>Gift coins</p>
       <p>Chat rules</p>
       <p (click)="closeChat()">Close chat</p>
     </div>
     <i class="fa-solid fa-bars" (click)="toggleAnimation()"></i>
   </div>
+</div>
+<div class="open-chat" (click)="openChat()" [ngStyle]="openChatParams">
+  <i class="fa-regular fa-comments"></i>
 </div>

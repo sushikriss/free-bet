@@ -4,7 +4,7 @@
   margin-top: -1rem;
   background-color: rgb(41 41 41);
   display: flex;
-  font-family: Russo One, sans-serif;
+  font-family: Poppins, sans-serif;
   position: fixed;
   z-index: 2;
 }
@@ -29,11 +29,11 @@ li > a {
   color: rgba(146, 147, 166);
   cursor: pointer;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 17px;
   text-decoration: none;
 }
 
-a:hover {
+li > a:hover {
   background-image: linear-gradient(to right, #e8d76f, #c49a30);
   background-size: 100%;
   background-repeat: repeat;
@@ -66,11 +66,12 @@ i {
 
 .fa-ethereum {
   color: #37367b;
+  margin-top: 0.3%;
 }
 
 .fa-coins {
   margin-left: -1.8%;
-  margin-top: 0.2%;
+  margin-top: 0.3%;
   color: #9f895f;
 }
 
@@ -78,12 +79,12 @@ i {
   margin-left: -2%;
   color: darkseagreen;
   font-size: 18px;
-  margin-top: 0.2%;
+  margin-top: 0.3%;
 }
 
 .fa-medal {
   margin-left: -1.6%;
-  margin-top: 0.2%;
+  margin-top: 0.3%;
   color: #c49a30;
 }
 
@@ -95,12 +96,12 @@ i {
   margin-top: -5%;
   width: 200px;
   height: 2.5rem;
-  font-family: Russo One, sans-serif;
+  font-family: Poppins, sans-serif;
   cursor: pointer;
   background-color: rgb(41, 41, 41);
   border: 1px solid #fdd776;
   color: #fdd776;
-  font-style: italic;
+  letter-spacing: 1px;
   transition: all 0.1s;
 }
 
@@ -110,7 +111,7 @@ i {
 
 .form {
   position: absolute;
-  margin-left: -3%;
+  margin-left: -4%;
   margin-top: 0.9%;
   padding: 27px;
   text-align: center;
@@ -120,6 +121,7 @@ i {
   background-color: rgb(41, 41, 41);
   animation: translateLogin 0.8s;
   transition: all 0.3s;
+  font-family: Poppins, sans-serif;
 }
 
 .register {
@@ -193,9 +195,8 @@ input {
   background-color: #eeeeee;
 }
 .form-login input[type="submit"] {
-  background-color: rgb(146, 147, 166);
+  background-color: #5b5b5b;
   color: #eee;
-  font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -210,6 +211,12 @@ input {
   display: flex;
   margin-bottom: 2rem;
 }
+
+.form-field > .register {
+  letter-spacing: 1px;
+}
+
+.register 
 
 .hidden {
   border: 0;
