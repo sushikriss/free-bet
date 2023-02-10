@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { TokenApiService } from 'src/app/shared/services/token-api.service';
 import { WidthChangeService } from 'src/app/shared/services/width-change.service';
@@ -13,8 +12,9 @@ export class HomeComponent implements OnInit, OnDestroy {
   user: User | undefined;
   toChangeWidth: boolean = false;
   widthSubscription: any;
-  cryptoData: any;
   loading: boolean = true;
+  tokens: any;
+  userAuthenticated: boolean = true;
 
   constructor(
     private widthService: WidthChangeService,
@@ -27,11 +27,10 @@ export class HomeComponent implements OnInit, OnDestroy {
         this.toChangeWidth = value;
       }
     );
-    
-    const cryptoData = await this.cryptoService.getCryptoData();
+
+    this.tokens = await this.cryptoService.getCryptoData();
     this.loading = false;
-    console.log(cryptoData);
-    
+    window.scrollTo(0, 0);
   }
 
   ngOnDestroy(): void {

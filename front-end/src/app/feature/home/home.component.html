@@ -1,16 +1,21 @@
-<div class="main-div" [ngStyle]="{'width': toChangeWidth ? '85%' : '70%', 'margin-left': toChangeWidth ? '7rem' : '22rem'}">
-  <div class="dot-wave" *ngIf="loading" [ngStyle]="{'margin-left': toChangeWidth ? '39rem' : '31rem'}">
+<div class="main-div"
+  [ngStyle]="{
+    width: toChangeWidth ? '85%' : '70%',
+    'margin-left': toChangeWidth ? '7rem' : '22rem'}">
+  <div class="welcome" *ngIf="userAuthenticated">
+    <h1>Bet on Crypto Tokens and earn rewards!</h1>
+    </div>  
+  <div class="dot-wave"
+    *ngIf="loading"
+    [ngStyle]="{ 'margin-left': toChangeWidth ? '39rem' : '31rem' }">
     <div class="dot-wave__dot"></div>
     <div class="dot-wave__dot"></div>
     <div class="dot-wave__dot"></div>
     <div class="dot-wave__dot"></div>
   </div>
-  <div class="token-tab">
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit commodi
-      molestias dignissimos placeat eligendi inventore, nostrum explicabo porro
-      similique, nisi quas enim doloribus cum perferendis molestiae repudiandae,
-      necessitatibus repellendus corporis!
-    </p>
-  </div>
+    <span></span>
+    <div class="token-tab" *ngFor="let token of tokens" index as i>
+      <p>{{ token.name }}</p>
+      <img src="{{ token.image }}" alt="{{ token.name }}" />
+    </div>
 </div>
