@@ -31,3 +31,33 @@
 .contacts {
   margin-left: 16%;
 }
+
+ul {
+  display: flex;
+  margin-left: -46%;
+}
+
+li {
+  list-style-type: none;
+  margin-right: 25%;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+i {
+  color: #3b5998;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 20%,
+    white 20%,
+    white 93%,
+    transparent 93%
+  );
+  background-size: 84%;
+  background-position: 60% 0;
+  background-repeat: no-repeat;
+}
+
+.fa-linkedin {
+  color: #0072b1;
+}

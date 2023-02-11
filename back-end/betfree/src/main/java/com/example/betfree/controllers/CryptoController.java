@@ -18,8 +18,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/")
 public class CryptoController {
-    private static final String API_KEY = "341f6c58-a236-4dc3-8c0f-31f2852c55c1";
-    private static final String API_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=10&convert=USD&CMC_PRO_API_KEY=" + API_KEY;
+    private static final String API_URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,ripple,dogecoin,cardano,polygon,stellar,aave,litecoin,polkadot,monero&order=market_cap_desc&per_page=10&page=1&sparkline=false";
 
     private final OkHttpClient client = new OkHttpClient();
 

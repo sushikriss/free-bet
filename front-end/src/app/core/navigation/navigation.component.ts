@@ -10,6 +10,7 @@ export class NavigationComponent implements OnInit {
   boxStyles: any = {
     transform: 'translate(0px, 150px)',
     opacity: 0,
+    visibility: 'hidden',
   };
   toggle = false;
 
