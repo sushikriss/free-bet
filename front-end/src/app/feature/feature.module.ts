@@ -6,6 +6,7 @@ import { AchievementsComponent } from './achievements/achievements.component';
 import { ChatComponent } from './chat/chat.component';
 import { DailyComponent } from './daily/daily.component';
 import { HomeComponent } from './home/home.component';
+
 import { RefferalsComponent } from './refferals/refferals.component';
 import { ShopComponent } from './shop/shop.component';
 import { TokensComponent } from './tokens/tokens.component';
@@ -14,23 +15,23 @@ import { TokensComponent } from './tokens/tokens.component';
   declarations: [
     HomeComponent,
     RefferalsComponent,
-    TokensComponent,
     DailyComponent,
     ShopComponent,
     AchievementsComponent,
     AboutComponent,
     ChatComponent,
+    TokensComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
     HomeComponent,
     RefferalsComponent,
-    TokensComponent,
     DailyComponent,
     ShopComponent,
     AchievementsComponent,
     AboutComponent,
     ChatComponent,
+    TokensComponent,
   ],
 })
 export class FeatureModule {}

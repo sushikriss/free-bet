@@ -20,9 +20,67 @@
 }
 
 .welcome {
-  width: 100%;
+  width: 95%;
+  align-items: center;
   height: 300px;
-  background-color: #222222;
+  font-weight: 100;
+  background-color: rgb(41, 41, 41);
+  margin: 30px;
+  margin-top: 5%;
+  border-radius: 2%;
+  box-shadow: -1px -1px 15px 4px rgb(0 0 0 / 22%);
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome > h1 {
+  padding-top: 25px;
+}
+
+.welcome-info {
+  display: flex;
+}
+
+.info {
+  margin-left: 6%;
+  margin-top: 5%;
+  width: 43%;
+  margin-right: 15%;
+}
+
+.coins-images {
+  margin-top: 4%;
+  margin-left: 5%;
+}
+
+.coins-images > img {
+  width: 200px;
+  height: auto;
+}
+
+.fa-question {
+  margin-left: 92%;
+  transition: color 0.5s ease;
+}
+
+.fa-question:hover {
+  color: #c49a30;
+}
+
+.about {
+  position: absolute;
+  display: none;
+  margin-left: 92%;
+  width: 100%;
+  z-index: 4;
+  background-color: #c49a30;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.fa-question:hover ~ .about {
+  display: block;
+  opacity: 1;
 }
 
 .dot-wave {
@@ -33,7 +91,6 @@
   display: flex;
   flex-flow: row nowrap;
   position: fixed;
-  margin-top: 18%;
   margin-left: 31%;
   align-items: center;
   justify-content: space-between;

@@ -1,21 +1,45 @@
-<div class="main-div"
+<div
+  class="main-div"
   [ngStyle]="{
     width: toChangeWidth ? '85%' : '70%',
-    'margin-left': toChangeWidth ? '7rem' : '22rem'}">
+    'margin-left': toChangeWidth ? '7rem' : '22rem'
+  }"
+>
   <div class="welcome" *ngIf="userAuthenticated">
-    <h1>Bet on Crypto Tokens and earn rewards!</h1>
-    </div>  
-  <div class="dot-wave"
+    <h1>Crypto Coins and Tokens are here!</h1>
+    <div class="welcome-info">
+      <div class="info">
+        <p>Bet on our listed coins and tokens!</p>
+        <p>
+          Unlock rewards, buy perks and use the daily spin or play games to earn
+          more coins. Most importantly, have fun!
+        </p>
+      </div>
+      <div class="coins-images">
+        <img src="./assets/img/welcomeLogo.png" alt="coins" />
+      </div>
+    </div>
+    <i class="fa-solid fa-question"></i>
+    <div class="about" id="about">
+      <p>
+        Bet on token's prices based on 24 hours. The more you bet, the more you
+        get.
+      </p>
+    </div>
+  </div>
+  <div
+    class="dot-wave"
     *ngIf="loading"
-    [ngStyle]="{ 'margin-left': toChangeWidth ? '39rem' : '31rem' }">
+    [ngStyle]="{ 'margin-left': toChangeWidth ? '39rem' : '31rem' }"
+  >
     <div class="dot-wave__dot"></div>
     <div class="dot-wave__dot"></div>
     <div class="dot-wave__dot"></div>
     <div class="dot-wave__dot"></div>
   </div>
-    <span></span>
-    <div class="token-tab" *ngFor="let token of tokens" index as i>
-      <p>{{ token.name }}</p>
-      <img src="{{ token.image }}" alt="{{ token.name }}" />
-    </div>
+  <span></span>
+  <div class="token-tab" *ngFor="let token of tokens" index as i>
+    <p>{{ token.name }}</p>
+    <img src="{{ token.image }}" alt="{{ token.name }}" />
+  </div>
 </div>

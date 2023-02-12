@@ -4,7 +4,7 @@ import { WidthChangeService } from 'src/app/shared/services/width-change.service
 @Component({
   selector: 'app-tokens',
   templateUrl: './tokens.component.html',
-  styleUrls: ['./tokens.component.scss']
+  styleUrls: ['./tokens.component.scss'],
 })
 export class TokensComponent implements OnInit, OnDestroy {
   toChangeWidth: boolean = false;

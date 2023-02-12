@@ -5,9 +5,10 @@ import { AboutComponent } from './feature/about/about.component';
 import { AchievementsComponent } from './feature/achievements/achievements.component';
 import { DailyComponent } from './feature/daily/daily.component';
 import { HomeComponent } from './feature/home/home.component';
+import { TokensComponent } from './feature/tokens/tokens.component';
+
 import { RefferalsComponent } from './feature/refferals/refferals.component';
 import { ShopComponent } from './feature/shop/shop.component';
-import { TokensComponent } from './feature/tokens/tokens.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
