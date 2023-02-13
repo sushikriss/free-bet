@@ -17,6 +17,7 @@
   padding: 20px;
   border: 1px solid orange;
   width: 30%;
+  margin: 30px;
 }
 
 .welcome {
@@ -69,17 +70,24 @@
 
 .about {
   position: absolute;
-  display: none;
-  margin-left: 92%;
-  width: 100%;
+  margin-left: -1%;
+  margin-top: 4.5%;
+  padding-left: 25px;
+  padding-right: 25px;
+  pointer-events: none;
+  width: 78%;
   z-index: 4;
-  background-color: #c49a30;
-  transition: all 0.5s;
+  background-color: rgb(41, 41, 41);
+  transition: all 0.7s;
   opacity: 0;
 }
 
+.beta {
+  font-style: italic;
+  color: darkseagreen;
+}
+
 .fa-question:hover ~ .about {
-  display: block;
   opacity: 1;
 }
 
