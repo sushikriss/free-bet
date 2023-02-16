@@ -6,6 +6,7 @@ import okhttp3.Response;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @Service
 public class TokensService {
     private static final String API_URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,ripple,dogecoin,cardano,polygon,stellar,aave,litecoin,polkadot,monero&order=market_cap_desc&per_page=10&page=1&sparkline=false";

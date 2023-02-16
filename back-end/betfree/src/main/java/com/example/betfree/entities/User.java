@@ -1,14 +1,25 @@
 package com.example.betfree.entities;
 
-import com.example.betfree.enums.RoleEnum;
+import com.example.betfree.entities.enums.RoleEnum;
 import jakarta.persistence.*;
-import jakarta.transaction.Transactional;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.Collection;
 import java.util.List;
 
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "users")
-public class User extends BaseEntity {
+public class User extends BaseEntity implements UserDetails {
 
     @Column(name = "full_name")
     private String fullName;
@@ -28,71 +39,38 @@ public class User extends BaseEntity {
     @OneToMany
     private List<Bet> userBets;
 
-    public User() {
-    }
-
-    public User(String fullName, String username, String email, String password, int userLevel, double userTotalBetAmount) {
-        this.fullName = fullName;
-        this.username = username;
-        this.email = email;
-        this.password = password;
-        this.userLevel = userLevel;
-        this.userTotalBetAmount = userTotalBetAmount;
-    }
-
-    public List<Bet> getUserBets() {
-        return userBets;
-    }
-
-    public void setUserBets(List<Bet> userBets) {
-        this.userBets = userBets;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
+    @Override
     public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
+    @Override
     public String getPassword() {
         return password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
     }
 
-    public int getUserLevel() {
-        return userLevel;
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
     }
 
-    public void setUserLevel(int userLevel) {
-        this.userLevel = userLevel;
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
     }
 
-    public double getUserTotalBetAmount() {
-        return userTotalBetAmount;
+    @Override
+    public boolean isEnabled() {
+        return true;
     }
 
-    public void setUserTotalBetAmount(double userTotalBetAmount) {
-        this.userTotalBetAmount = userTotalBetAmount;
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return List.of(new SimpleGrantedAuthority(role.name()));
     }
 }
