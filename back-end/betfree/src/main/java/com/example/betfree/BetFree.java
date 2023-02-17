@@ -19,7 +19,10 @@ public class BetFree implements CommandLineRunner {
 
 	@Override
 	public void run(String...args) throws Exception {
-		User user = new User("Antoan", "antonzz", "email@abv.bg", "password123", 1, 20.23);
+		User user = new User();
+		user.setUsername("Makarov");
+		user.setEmail("makar@abv.bg");
+		user.setPassword("makarov123");
 		this.userRepository.save(user);
 	}
 }

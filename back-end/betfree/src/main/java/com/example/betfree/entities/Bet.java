@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 @Data
-@MappedSuperclass
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
