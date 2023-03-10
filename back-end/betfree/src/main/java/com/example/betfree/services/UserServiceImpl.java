@@ -1,17 +1,16 @@
 package com.example.betfree.services;
 
 import com.example.betfree.entities.User;
+import com.example.betfree.interfaces.UserService;
 import com.example.betfree.repository.UserRepository;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class UserServiceImpl implements  UserService {
+public class UserServiceImpl implements UserService {
 
     @Autowired
     private final UserRepository userRepository;

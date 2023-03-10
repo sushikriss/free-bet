@@ -1,4 +1,4 @@
-package com.example.betfree.services;
+package com.example.betfree.interfaces;
 
 
 import com.example.betfree.entities.Bet;
